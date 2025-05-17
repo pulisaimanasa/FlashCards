@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Smart Flashcard System</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<h1 style="font-size: 35px;">Smart Flashcard System</h1>
+
+<section id="add-flashcard-section">
+  <h2>Post a new Flashcard</h2>
+  <form id="flashcard-form">
+    <label for="studentId">Student ID:</label>
+    <input type="text" id="studentId"/>
+
+    <label for="question">Question:</label>
+    <textarea id="question"></textarea>
+
+    <label for="answer">Answer:</label>
+    <textarea id="answer"></textarea>
+
+    <button type="submit">Add Flashcard</button>
+  </form>
+</section>
+
+<section id="get-flashcards-section">
+  <h2 style="margin-top: 15px;">Student Flashcards</h2>
+  <label for="limit">Number of Flashcards:</label>
+  <input type="number" id="limit" min="1" max="20" value="0" />
+
+  <button id="get-flashcards-btn">Get Flashcards</button>
+</section>
+
+<section id="flashcards-display">
+  <h2 style="margin-top: 15px;">Student's total Flashcards</h2>
+  <div id="flashcards-container"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
